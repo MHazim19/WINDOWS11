@@ -40,7 +40,7 @@ jobs:
           $user = '${{ secrets.DYNU_USER }}'
           $pass = '${{ secrets.DYNU_PASS }}'
           $repo_name = "${{ github.event.repository.name }}"
-          $hostname = "$($repo_name.ToLower()).loseyourip.com"
+          $hostname = "$($repo_name.ToLower()).ddnsgeek.com"
           $ip = $env:TAILSCALE_IP
           $updateUrl = "https://api.dynu.com/nic/update?hostname=$hostname&myip=$ip&username=$user&password=$pass"
           $userAgent = "GitHubActions-RDP/1.0 $user"
